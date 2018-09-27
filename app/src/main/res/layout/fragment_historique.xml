@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragmentLL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.mahmoud.portefeuille.Screen.HistoriqueFragment">
+
+
+    <TextView
+        android:id="@+id/etCommentaire"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/valeur"/>
+
+    <EditText
+        android:id="@+id/etValeur"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/tvComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:text="Commentaire" />
+
+    <EditText
+        android:id="@+id/etComment"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:gravity="top"
+        android:inputType="text" />
+
+
+    <RadioGroup
+        android:id="@+id/groupRadioB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbDepense"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_weight="1"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/d_pense" />
+
+        <RadioButton
+            android:id="@+id/rbRevenu"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_weight="1"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/revenu" />
+
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:text="Date" />
+
+    <EditText
+        android:id="@+id/etDate"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:inputType="date" />
+
+
+
+</LinearLayout>
